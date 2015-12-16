@@ -10,6 +10,7 @@ def set_options(opt):
 
 def configure(conf):
     conf.check_tool('compiler_cxx')
+    conf.check_cxx(lib = 'cppunit')
     pass
 
 def build(bld):
