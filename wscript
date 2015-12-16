@@ -18,7 +18,7 @@ def build(bld):
         include = 'include /usr/local/include',
         cxxflags='-std=c++11',
         lib = 'cppunit',
-        libpath = '/usr/local/lib',
+        libpath = '/usr/local/lib lib',
         target = 'kuku_test')
     bld(features = 'cxx cprogram',
         source = 'src/kuku_vec.cpp src/kuku.cpp',
