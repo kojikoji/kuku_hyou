@@ -12,14 +12,15 @@ $ ./waf build
 `build/default/kuku`が実行ファイルになります。
 ##Usage
 九九の表示を行いたい場合には以下のコマンドを実行してください。
+
 ```shell-session
-$./build/defaul/kuku
+$./build/default/kuku
 ```
 
 足し算の九九の表示を行いたい場合には以下のコマンドを実行してください。
 
 ```shell-session
-$./build/defaul/kuku -p
+$./build/default/kuku -p
 ```
 
 ##Licence

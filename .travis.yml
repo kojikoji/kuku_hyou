@@ -1,0 +1,12 @@
+language: c++
+before_script:
+  - ./waf configure
+  - ./waf build
+script:
+  - ./build/default/kuku
+  - ./build/default/kuku -p
+
+notifications:
+  emails:tiisaishima@gimail.com
+  on_success: always # default: change
+  on_failure: always
