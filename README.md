@@ -22,7 +22,9 @@ $./build/default/kuku
 ```shell-session
 $./build/default/kuku -p
 ```
-
+##連絡先
+小嶋泰弘
+email: tiisaishima@gmail.com
 ##Licence
 Copyright (c) 2015, Yasuhiro Kojima
 
