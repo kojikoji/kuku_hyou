@@ -21,7 +21,9 @@
 *.la
 *.a
 *.lib
-
+!lib/libcppunit.a
+!lib/libcppunit-1.13.0.dylib
+!lib/libcppunit.dylib
 # Executables
 *.exe
 *.out
@@ -33,3 +35,7 @@ build/*
 #waf file
 .waf*
 .lock*
+#travis is added
+!.travis.yml
+#gitignore added
+!.gitignore
