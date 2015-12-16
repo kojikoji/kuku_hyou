@@ -29,8 +29,8 @@ Kuku_vec::Kuku_vec(bool pflag){
 }
 string Kuku_vec::str(){
   stringstream ss;
-  for(auto rowit = this->begin();rowit != this->end();++rowit){
-    for(auto colit = rowit->begin();colit != rowit->end();++colit){
+  for(vector<vector<int > >::iterator rowit = this->begin();rowit != this->end();++rowit){
+    for(vector<int >::iterator colit = rowit->begin();colit != rowit->end();++colit){
       ss.setf(ios::right,ios::adjustfield);
       ss.width(3);
       ss<<*(colit);

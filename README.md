@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/kojikoji/kuku_hyou.svg)](https://travis-ci.org/kojikoji/kuku_hyou)
 # kuku_hyou
 ##Introduction
 このソフトは九九を計算、表示するプログラムです。

@@ -17,16 +17,16 @@ def build(bld):
     bld(features = 'cxx cprogram',
         source = 'src/kuku_test.cpp src/kuku_vec.cpp src/kuku_test_main.cpp',
         include = 'include /usr/local/include',
-        cxxflags='-std=c++xx',
+        cxxflags='-std=c++11',
         lib = 'cppunit',
-        libpath = '/usr/local/lib lib',
+        libpath = '/usr/local/lib',
         target = 'kuku_test')
     bld(features = 'cxx cprogram',
         source = 'src/kuku_vec.cpp src/kuku.cpp',
         include = 'include /usr/local/include',
         cxxflags='-std=c++11',
         lib = 'cppunit',
-        libpath = '/usr/local/lib lib',
+        libpath = '/usr/local/lib',
         target = 'kuku')
     pass
 
