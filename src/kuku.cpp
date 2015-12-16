@@ -1,7 +1,8 @@
 #include<cmdline.h>
 #include<iostream>
 #include<vector>
-using namespace std;
+#include<kuku_vec.h>
+using namespace std;  
 int main(int argc, char *argv[]){
   //test for travis chagne
   cmdline::parser p;
@@ -11,17 +12,8 @@ int main(int argc, char *argv[]){
     cout<<p.error_full()<<p.usage();
     return(0);
   }
-  vector<int> table;
-  for(int i = 1;i < 10;i++){
-    for(int j = 1;j < 10;j++){
-      cout.width(3);
-      if(p.exist("plus")){
-	cout<<i+j<<" ";
-      }else{
-	cout<<i*j<<" ";
-      }
-    }
-    cout<<endl;
-  }
+  bool pflag = p.exist("plus");
+  Kuku_vec kvec(pflag);
+  cout<<kvec.str()<<endl;
   return(0);
 }
