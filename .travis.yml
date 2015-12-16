@@ -8,5 +8,5 @@ script:
 
 notifications:
   emails: tiisaishima@gmail.com
-  on_success: always # default: change
+  on_success: always
   on_failure: always
