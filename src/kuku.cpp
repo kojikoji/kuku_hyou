@@ -14,6 +14,6 @@ int main(int argc, char *argv[]){
   }
   bool pflag = p.exist("plus");
   Kuku_vec kvec(pflag);
-  cout<<kvec.str()<<endl;
+  cout<<kvec.str();
   return(0);
 }
