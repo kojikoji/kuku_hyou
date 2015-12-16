@@ -7,6 +7,6 @@ script:
   - ./build/default/kuku -p
 
 notifications:
-  emails:tiisaishima@gimail.com
+  emails:tiisaishima@gmail.com
   on_success: always # default: change
   on_failure: always
