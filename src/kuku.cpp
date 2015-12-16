@@ -3,6 +3,7 @@
 #include<vector>
 using namespace std;
 int main(int argc, char *argv[]){
+  //test for travis
   cmdline::parser p;
   p.add("plus", 'p', "addtion, not multiply");
   p.add("help", 'h', "print help");
