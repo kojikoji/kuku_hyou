@@ -4,7 +4,7 @@
 #include<kuku_vec.h>
 using namespace std;  
 int main(int argc, char *argv[]){
-  //test for travis chagne
+  // command line parse
   cmdline::parser p;
   p.add("plus", 'p', "addtion, not multiply");
   p.add("help", 'h', "print help");
@@ -12,6 +12,7 @@ int main(int argc, char *argv[]){
     cout<<p.error_full()<<p.usage();
     return(0);
   }
+  // calculate
   bool pflag = p.exist("plus");
   Kuku_vec kvec(pflag);
   cout<<kvec.str();
